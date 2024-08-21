@@ -1,5 +1,6 @@
 **2048 Javascript Game**
-- [DEMO LINK]([https://<your_account>.github.io/<repo_name>/](https://katya-sn.github.io/2048_game/))
+
+- [DEMO LINK](https://katya-sn.github.io/2048_game/)
 
 This is a simple implementation of the popular 2048 puzzle game using pure JavaScript and SCSS for styling. 
 The goal of the game is to slide numbered tiles on a 4x4 grid to combine them into a tile with the number 2048.
@@ -38,6 +39,6 @@ Game Rendering:
   The game is rendered by manipulating the DOM elements corresponding to the game grid. The content and classes of each cell are updated to reflect the current state of the board.
   
 **How To Play**
-Simply click here to start playing the game.
+Simply click - [DEMO LINK](https://katya-sn.github.io/2048_game/) to start playing the game.
 Use the arrow keys to move the tiles. Combine tiles of the same value to reach 2048.
 If you achieve 2048 in one tile, you win! If no moves are possible, the game is over.
