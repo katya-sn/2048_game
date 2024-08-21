@@ -18,7 +18,7 @@ The goal of the game is to slide numbered tiles on a 4x4 grid to combine them in
   The game features a clean, modern look with SCSS used to handle the styling, including dynamic classes for different tile values.
 
   
-##Technologies Used
+**Technologies Used**
 1. **JavaScript**: 
   Core game logic and board rendering.
 2. **SCSS**: 
@@ -28,7 +28,7 @@ The goal of the game is to slide numbered tiles on a 4x4 grid to combine them in
 4. **DOM Manipulation**: 
   Used to update the game board and score dynamically based on user input.
 
-##How It Works
+**How It Works**
 1. **Game State Management**: 
   The game state, including the board and score, is managed by the Game class. This class handles all the operations such as moving tiles, combining them, and checking the game status.
 2. **Tile Movement**: 
