@@ -1,20 +1,20 @@
-#2048 Javascript Game
+**2048 Javascript Game**
 
 - [DEMO LINK](https://katya-sn.github.io/2048_game/)
 
 This is a simple implementation of the popular 2048 puzzle game using pure JavaScript and SCSS for styling. 
 The goal of the game is to slide numbered tiles on a 4x4 grid to combine them into a tile with the number 2048.
 
-##Features
-1. Smooth Tile Movement: 
+**Features**
+1. **Smooth Tile Movement**: 
   Tiles slide in the direction of the arrow keys (Up, Down, Left, Right), combining when two tiles with the same number touch.
-2. Dynamic Board Updates: 
+2. **Dynamic Board Updates**: 
   The board updates after every valid move, adding a new tile (2 or 4) in a random empty position.
-3. Score Tracking: 
+3. **Score Tracking**: 
   The score is updated based on the value of the combined tiles, and displayed in real-time.
-4. Win/Lose Conditions: 
+4. **Win/Lose Conditions**: 
   The game ends when you create a 2048 tile (win) or when no moves are possible (lose).
-5. Stylish Design: 
+5. **Stylish Design**: 
   The game features a clean, modern look with SCSS used to handle the styling, including dynamic classes for different tile values.
 
   
