@@ -42,3 +42,10 @@ The goal of the game is to slide numbered tiles on a 4x4 grid to combine them in
 1. Simply click - [DEMO LINK](https://katya-sn.github.io/2048_game/) to start playing the game.
 2. Use the arrow keys to move the tiles. Combine tiles of the same value to reach 2048.
 3. If you achieve 2048 in one tile, you win! If no moves are possible, the game is over.
+
+**How to Run the Game Locally**
+1. Clone the repository to your local machine using the command `**git clone https://github.com/katya-sn/2048_game**`.
+2. Then, navigate to the project directory using cd 2048_game.
+3. Make sure you have Node.js and npm installed, and install the project dependencies by running `**npm install**`.
+4. After the dependencies are installed, start the development server with `**npm start**`.
+5. Finally, open your browser and go to **http://localhost:3000** to see the 2048 game running locally. Enjoy the game!
