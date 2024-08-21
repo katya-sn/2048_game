@@ -38,7 +38,7 @@ The goal of the game is to slide numbered tiles on a 4x4 grid to combine them in
 4. **Game Rendering**: 
   The game is rendered by manipulating the DOM elements corresponding to the game grid. The content and classes of each cell are updated to reflect the current state of the board.
   
-##How To Play
+**How To Play**
 1. Simply click - [DEMO LINK](https://katya-sn.github.io/2048_game/) to start playing the game.
 2. Use the arrow keys to move the tiles. Combine tiles of the same value to reach 2048.
 3. If you achieve 2048 in one tile, you win! If no moves are possible, the game is over.
