@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 class Game {
   constructor(
@@ -11,7 +11,7 @@ class Game {
   ) {
     this.board = initialState;
     this.score = 0;
-    this.status = 'idle';
+    this.status = "idle";
   }
 
   moveLeft() {
@@ -130,13 +130,13 @@ class Game {
   }
 
   start() {
-    this.status = 'playing';
+    this.status = "playing";
     this.addNewTile();
     this.addNewTile();
   }
 
   restart() {
-    this.status = 'idle';
+    this.status = "idle";
 
     this.board = [
       [0, 0, 0, 0],
@@ -203,11 +203,11 @@ class Game {
 
   updateStatus() {
     if (this.board.flat().includes(2048)) {
-      this.status = 'win';
+      this.status = "win";
     } else if (!this.board.flat().includes(0) && !this.canMove()) {
-      this.status = 'lose';
+      this.status = "lose";
     } else {
-      this.status = 'playing';
+      this.status = "playing";
     }
   }
 }

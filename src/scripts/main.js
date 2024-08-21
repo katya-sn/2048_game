@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const Game = require('../modules/Game.class');
+const Game = require("../modules/Game.class");
 const game = new Game();
 
 function render() {
@@ -9,51 +9,51 @@ function render() {
   // eslint-disable-next-line
   const status = game.getStatus();
 
-  const table = document.querySelector('table');
-  const cells = table.getElementsByTagName('td');
+  const table = document.querySelector("table");
+  const cells = table.getElementsByTagName("td");
 
   let index = 0;
 
   for (let row = 0; row < gameBoard.length; row++) {
     for (let col = 0; col < gameBoard[row].length; col++) {
       cells[index].textContent =
-        gameBoard[row][col] === 0 ? '' : gameBoard[row][col];
-      cells[index].className = 'field-cell';
+        gameBoard[row][col] === 0 ? "" : gameBoard[row][col];
+      cells[index].className = "field-cell";
 
-      if (cells[index].textContent !== '') {
+      if (cells[index].textContent !== "") {
         cells[index].classList.add(`field-cell--${cells[index].textContent}`);
       }
       index++;
     }
   }
 
-  const scoreElement = document.querySelector('.game-score');
+  const scoreElement = document.querySelector(".game-score");
 
   scoreElement.textContent = score;
 
-  const messageWin = document.querySelector('.message-win');
-  const messageLose = document.querySelector('.message-lose');
-  const messageStart = document.querySelector('.message-start');
+  const messageWin = document.querySelector(".message-win");
+  const messageLose = document.querySelector(".message-lose");
+  const messageStart = document.querySelector(".message-start");
 
-  if (status === 'win') {
-    messageWin.classList.remove('hidden');
-  } else if (status === 'lose') {
-    messageLose.classList.remove('hidden');
+  if (status === "win") {
+    messageWin.classList.remove("hidden");
+  } else if (status === "lose") {
+    messageLose.classList.remove("hidden");
   } else {
-    messageStart.classList.add('hidden');
-    messageLose.classList.add('hidden');
+    messageStart.classList.add("hidden");
+    messageLose.classList.add("hidden");
   }
 }
 
-const button = document.querySelector('.button');
+const button = document.querySelector(".button");
 
-button.addEventListener('click', () => {
+button.addEventListener("click", () => {
   const buttonText = button.textContent;
 
-  if (buttonText === 'Start') {
+  if (buttonText === "Start") {
     game.start();
-    button.textContent = 'Restart';
-    button.classList.replace('start', 'restart');
+    button.textContent = "Restart";
+    button.classList.replace("start", "restart");
     render();
   } else {
     game.restart();
@@ -61,21 +61,21 @@ button.addEventListener('click', () => {
   }
 });
 
-document.addEventListener('keydown', (e) => {
-  if (game.getStatus() !== 'playing') {
+document.addEventListener("keydown", (e) => {
+  if (game.getStatus() !== "playing") {
     return;
   } else {
     switch (e.key) {
-      case 'ArrowRight':
+      case "ArrowRight":
         game.moveRight();
         break;
-      case 'ArrowLeft':
+      case "ArrowLeft":
         game.moveLeft();
         break;
-      case 'ArrowUp':
+      case "ArrowUp":
         game.moveUp();
         break;
-      case 'ArrowDown':
+      case "ArrowDown":
         game.moveDown();
         break;
     }
