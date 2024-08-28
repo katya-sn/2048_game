@@ -1,4 +1,4 @@
-**2048 Javascript Game**
+# 2048 Javascript Game
 
 - [DEMO LINK](https://katya-sn.github.io/2048_game/)
 
